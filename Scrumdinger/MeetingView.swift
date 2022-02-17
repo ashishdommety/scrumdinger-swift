@@ -12,8 +12,16 @@ struct MeetingView: View {
     // content, layout and behavior of the view is decided here.
     var body: some View {
         VStack {
+            VStack {
+                Text("Scrumdinger")
+                    .font(.title)
+                Text("An app for scrum")
+                    .font(.subheadline)
+            }
+            
             ProgressView(value:5, total:15)
-            // this is like a div for mobile swift apps.
+            // Stacks are like divs for the web.
+            // HStack's group horizontally. VStacks group vertically.
             HStack {
                 // so is this.
                 VStack (alignment: .leading) {
